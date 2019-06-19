@@ -12,6 +12,17 @@ else
   exit 1
 fi
 
+# move symlinked products
+INPUT_DIR=orig_symlinked_inputs
+if [ ! -d "$INPUT_DIR" ]; then
+   mkdir $INPUT_DIR
+   mv displacement-* $INPUT_DIR/
+   cd $INPUT_DIR
+   cp -aL displacement-* ..
+   cd ..
+fi
+
+# submit time series into leaflet server
 GZ=$(find . -name "*-PARAMS.h5.gz")
 unpigz ${GZ}
 TS_FILE=$(find . -name "*-PARAMS.h5")

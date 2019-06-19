@@ -58,6 +58,6 @@ if __name__ == "__main__":
     Main program
     '''
     if len(sys.argv) != 3:
-        print "Not enough arguments: leaflet-url and time series id required"
+        print("Not enough arguments: leaflet-url and time series id required")
         sys.exit(1)
     update(sys.argv[1], sys.argv[2])
