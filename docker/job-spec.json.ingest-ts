@@ -1,7 +1,7 @@
 {
   "command": "/home/ops/ts-ingest/ingester.bash",
   "imported_worker_files": {
-   "/data/ts":"/data/ts"
+   "/data/ts":"/data/ts:rw"
   },
   "required_queues": ["ts-ingest"],
   "params" : [
