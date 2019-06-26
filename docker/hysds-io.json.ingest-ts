@@ -12,7 +12,7 @@
       "name": "thredds_data_dir",
       "from": "submitter",
       "type": "text",
-      "default": "/data/ts/",
+      "default": "/data/ts",
       "placeholder": "THREDDS data directory"
     },
     { 
