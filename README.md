@@ -5,4 +5,4 @@ product and attempts to ingest it into the thredds server that supports Leaflet 
 
 
 - `LEAFLET_SERVER`: the IP for the leaflet server (used for ssh)
-- `LEAFLET_SERVER_DS_LOCATION`: location to place datasets on the server. Standard location is: "/home/ops/verdi/ops/aria-leaflet-timeseries-docker/datasets/ts/"
+- `LEAFLET_SERVER_DS_LOCATION`: location to place datasets on the server. Standard location is: "/data/ts/"
